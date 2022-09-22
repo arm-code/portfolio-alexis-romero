@@ -1,0 +1,34 @@
+{% extends 'layouts/layout.html' %}
+
+{% load static %}
+
+{% block content %}
+
+    <section id="welcome-section" class="welcome-section">        
+            <img src="{% static 'img/pf1.jpeg' %}" alt="profile">
+            <h3>Hey, I am:</h3>
+            <h1>Alexis Romero Mendoza</h1>
+            <p>a web and desktop developer</p>
+    </section>
+    
+    <section id="projects-section" class="projects-section">               
+            <div class="card-projects">
+                <h3>Mis proyectos.</h3>
+                {% include 'partials/projects.html' %}
+            </div>             
+    </section>
+
+    <section id="about-section" class="about-section">               
+        {% include 'partials/information.html' %}
+    </section>
+
+    <section id="contact-section" class="contact-section">        
+        {% include 'partials/contact.html' %}
+    </section>
+    
+    
+    
+
+    
+
+{% endblock content %}
