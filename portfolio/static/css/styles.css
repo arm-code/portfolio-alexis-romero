@@ -97,11 +97,13 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
+  
 }
 
 .welcome-section img{
     border-radius: 50%;
     width: 30%;
+    
 }
 
 .projects-section{
@@ -159,6 +161,7 @@ a {
 
 .card-aboutme{
   text-align: center;
+  padding: 10%;
 }
 
 .card-aboutme ul li{
@@ -166,6 +169,7 @@ a {
   list-style-type: none;
   color: var(--main-red);
   padding: 5px;
+  
 }
 
 .card-contact{
