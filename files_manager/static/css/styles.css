@@ -11,10 +11,11 @@
   padding: 0;
  }
 
- h1,h2{
+h1,h2{
   font-weight: 700;
   font-size: 3em;
  }
+
 nav{
   background-color: var(--main-red);
   justify-content: flex-end;
@@ -41,7 +42,7 @@ footer{
   justify-content: center;
   width: 100%;
 }
-.navigation-bar{
+navigation-bar{
   list-style-type: none;
   display: flex;
   justify-content: center;
@@ -137,7 +138,9 @@ a {
 .project img{
   width: 30%;
 }
-
+.project{
+  border: #be3144;
+}
 
 .about-section{
   display: flex;
@@ -208,4 +211,8 @@ font-size: 1.5em;
 }
 
  
-/* From uiverse.io by @Clenio21 */
+/* Inicio Section de los botones de contacto*/
+/* From uiverse.io by @Navarog21 */
+
+
+/* Final Section de los botones de contacto*/
