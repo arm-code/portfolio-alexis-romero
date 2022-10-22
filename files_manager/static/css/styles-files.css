@@ -13,10 +13,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
-h1,h2{
+h1, h2{
   font-weight: 700;
   font-size: 3em;
- }
+}
 
 nav{
   background-color: var(--main-red);
@@ -58,42 +58,43 @@ ul li a{
 a {
     color: #f5f6f7;
     text-decoration: none;
-   
-  }
+}
   
-  a:visited {
-    color: #f5f6f7;
-  }
+a:visited {
+  color: #f5f6f7;
+}     
   
-  a:hover {
-    color: #1b1b32;
-    
-  }
+a:hover {
+  color: #1b1b32;
   
-  a:active {
-    color: brown;
-  }
+}
+  
+a:active {
+  color: brown;
+}
 
   /* */
 
 .container{
-
   height: 80vh;
   width: 100%;
   left: 0;
 }
-.container .drawings{
-  border: #be3144 solid;
+
+.drawings{
+  
   height: 100%;
   
   display: flex;
   flex-direction: row;
-  justify-content: baseline;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-.container .drawings .dwg{
-  border: #be3144 solid;
- width: 10%;
-  height: 10%;
+.dwg{
+  border: green solid;
+  width: 30%;
+  height: 30%;
+  margin: 10px;
+  background-color: lime;
 }
