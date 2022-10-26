@@ -10,23 +10,23 @@
 </head>
 <body>
     
-    <div class="title"><h1>Files Manager</h1></div>
+    <div class="title"><h1>WELCOME TO FILES MANAGER</h1></div>
     <div class="menu">{% include 'partials/menu-bar.html' %}</div>
     
     <div class="container">
-        <h2>Added recently</h2>
+        <br>
+        <h3>ADDED RECENTLY</h3>
+        <hr>
         <div class="drawings">
+            
+            {% for i in drawings %}
+                <div class="dwg">
+                    <p> {{i.program}}</p>
+                </div>
+            {% endfor %}
+            
 
-            <div class="dwg">
-                <p>drawing 1</p>
-            </div>
-
-            <div class="dwg">
-                <p>d1</p>
-            </div>
-            <div class="dwg">
-                <p>drawing 1</p>
-            </div>
+            
             
         </div>
     </div>
