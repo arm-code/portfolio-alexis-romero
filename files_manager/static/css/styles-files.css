@@ -21,6 +21,7 @@ h1, h2{
 
 hr{
   border: 2px solid red;
+  background-color: #be3144;
 }
 
 nav{
@@ -93,17 +94,29 @@ a:active {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
 .dwg{
-  border: green solid;
+  border: var(--main-gray) solid;
+  border-radius: 10px;
   width: 30%;
   height: 30%;
   margin: 10px;
-  background-color: lime;
+  background-color: beige;
 
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.dwg:hover{
+  background-color: var(--main-blue);
+  color: white;
+}
+.dwg p{
+  font-size: 24px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bolder;
 }
