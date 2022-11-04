@@ -3,7 +3,6 @@
 {% load static %}
 
 {% block content %}
-
     <section id="welcome-section" class="welcome-section">        
             <img src="{% static 'img/pf1.jpeg' %}" alt="profile">
             <h3>Hey, I am:</h3>
@@ -11,10 +10,8 @@
             <p>a web and desktop developer</p>
     </section>
     
-    <section id="projects-section" class="projects-section">               
-           
-        <h1>My Projects</h1>
-        
+    <section id="projects-section" class="projects-section">                    
+        <h1>My Projects</h1>        
         <div class="projects-container">
         {% include 'partials/projects.html' %}
         </div>               
@@ -26,11 +23,5 @@
 
     <section id="contact-section" class="contact-section">        
         {% include 'partials/contact.html' %}
-    </section>
-    
-    
-    
-
-    
-
+    </section>    
 {% endblock content %}
