@@ -10,12 +10,10 @@
         
         <div class="drawings">
             
-            {% for i in drawings %}
-                {% if i.id <= 6 %}
-                    <div class="dwg">
-                        <p> {{i.program}}</p>
-                    </div>
-                {% endif %}
+            {% for i in drawings %}                
+                <div class="dwg">
+                    <p> {{i.program}}</p>
+                </div>                
             {% endfor %}
             
             <div class="dwg">
