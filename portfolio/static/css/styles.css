@@ -6,16 +6,38 @@
   --main-background: #1b1b32;
 }
 
- *{
+* {
   margin: 0;
   padding: 0;
- }
+}
 
- h1,h2{
-  font-weight: 700;
-  font-size: 3em;
- }
-nav{
+
+
+@media screen and (min-width: 1024px) {
+
+  h1,
+  h2 {
+    font-weight: 700;
+    font-size: 3em;
+  }
+}
+
+@media screen and (min-width: 760px) and (max-width: 1023px) {
+  h1,
+  h2 {
+    font-weight: 700;
+    font-size: 3em;
+  }
+}
+
+@media screen and (max-width:759px) {
+  h1,h2{
+    font-weight: 700;
+    font-size: 2em;
+  }
+}
+
+nav {
   background-color: var(--main-red);
   justify-content: flex-end;
   display: flex;
@@ -27,69 +49,72 @@ nav{
   z-index: 10;
 }
 
-body{
-  
+body {
+
   font-family: sans-serif;
   color: #f5f6f7;
-  
+
 }
 
-footer{
+footer {
   background-color: var(--main-red);
   color: white;
   display: flex;
   justify-content: center;
   width: 100%;
 }
-.navigation-bar{
+
+.navigation-bar {
   list-style-type: none;
   display: flex;
   justify-content: center;
   align-items: center;
 }
- .footer-bar{
+
+.footer-bar {
   list-style-type: none;
   justify-content: center;
   align-items: center;
   text-align: center;
- }
+}
 
- .footer-bar li{
+.footer-bar li {
   padding: 10px;
-  
- }
-ul li{
+
+}
+
+ul li {
   padding: 20px;
 }
 
-ul li a{
+ul li a {
   text-decoration: none;
   font-size: 20px;
   color: white;
 }
 
 a {
-    color: #f5f6f7;
-    text-decoration: none;
-   
-  }
-  
-  a:visited {
-    color: #f5f6f7;
-  }
-  
-  a:hover {
-    color: #1b1b32;
-    
-  }
-  
-  a:active {
-    color: brown;
-  }
+  color: #f5f6f7;
+  text-decoration: none;
+
+}
+
+a:visited {
+  color: #f5f6f7;
+}
+
+a:hover {
+  color: #1b1b32;
+
+}
+
+a:active {
+  color: brown;
+}
 
 
-.welcome-section{
-  background: linear-gradient(60deg, var(--main-gray), var(--main-background));    
+.welcome-section {
+  background: linear-gradient(60deg, var(--main-gray), var(--main-background));
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -97,22 +122,27 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
 }
 
-.welcome-section img{
-    border-radius: 50%;
-    width: 30%;
-    
+.welcome-section img {
+  max-width: 300px;
+  width: 30%;
+  margin: 20px;
+  transition: all .3s;
 }
 
-.projects-section{
+.welcome-section img:hover {
+  margin-top: -30px;
+}
+
+.projects-section {
   display: flex;
- flex-direction: column;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   background: linear-gradient(30deg, var(--main-gray), var(--main-blue));
   color: var(--main-background);
   text-align: center;
@@ -120,66 +150,68 @@ a {
 }
 
 /* adding projects*/
-.projects-container{
+.projects-container {
   padding: 10px;
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: center;
-  text-align: center; 
+  text-align: center;
 }
 
-.projects-container .project{
+.projects-container .project {
   margin: 10px;
-  width: 30%; 
+  width: 30%;
 
 }
 
-.project img{
+.project img {
   width: 30%;
 }
 
 
-.about-section{
+.about-section {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(60deg, var(--main-gray), var(--main-background));    
+  background: linear-gradient(60deg, var(--main-gray), var(--main-background));
   color: var(--main-white);
 }
-.contact-section{
+
+.contact-section {
   display: flex;
   flex-direction: column;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(30deg, var(--main-gray), var(--main-blue));    
+  background: linear-gradient(30deg, var(--main-gray), var(--main-blue));
   color: var(--main-background);
 }
 
-.card-aboutme{
+.card-aboutme {
   text-align: center;
   padding: 10%;
+  width: 50%;
 }
 
-.card-aboutme ul li{
+.card-aboutme ul li {
   font-weight: bold;
   list-style-type: none;
   color: var(--main-red);
   padding: 5px;
-  
+
 }
 
-.card-contact{
+.card-contact {
   color: var(--main-white);
   text-align: center;
-  
+
 }
 
-.card-contact div{
+.card-contact div {
   display: grid;
   grid-template-columns: auto;
   align-items: center;
@@ -187,25 +219,26 @@ a {
   padding: 10px;
 }
 
-.card-contact div div{
+.card-contact div div {
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 
-.card-contact div a{
+.card-contact div a {
   padding-left: 20px;
-  
+
 }
-.card-contact a:hover{
-font-size: 1.5em;
+
+.card-contact a:hover {
+  font-size: 1.5em;
   color: var(--main-red);
 }
 
 .card-contact img {
   width: 30px;
-  
+
 }
 
- 
+
 /* From uiverse.io by @Clenio21 */
